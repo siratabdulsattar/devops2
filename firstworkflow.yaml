@@ -1,0 +1,12 @@
+--
+on:
+  - push
+jobs:
+  first-job:
+    run-on: ubuntu-latest
+    steps:
+      - uses: action/checkout@v4
+      - run: cat firstfile.txt
+...
+
+
